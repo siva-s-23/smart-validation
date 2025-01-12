@@ -1,4 +1,4 @@
-# **Smart Validator**
+# **Smart Validation**
 
 A robust and flexible validation library for JavaScript and TypeScript, providing built-in support for various data types, custom validation rules, and error handling.
 
@@ -19,13 +19,13 @@ A robust and flexible validation library for JavaScript and TypeScript, providin
 Install the package using NPM or Yarn:
 
 ```bash
-npm install smart-validator
+npm install smart-validation
 ```
 
 or
 
 ```bash
-yarn add smart-validator
+yarn add smart-validation
 ```
 
 ---
@@ -35,7 +35,7 @@ yarn add smart-validator
 ### Import the Library
 
 ```typescript
-import { isValid, ValidationType } from "smart-validator";
+import { isValid, ValidationType } from "smart-validation";
 ```
 
 ### Basic Validation
@@ -174,6 +174,6 @@ This project is licensed under the ISC License. See the `LICENSE` file for detai
 
 ## **Support**
 
-If you encounter any issues, please [open an issue](https://github.com/siva-s-23/smart-validator/issues) on GitHub.
+If you encounter any issues, please [open an issue](https://github.com/siva-s-23/smart-validation/issues) on GitHub.
 
 ---

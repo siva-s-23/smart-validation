@@ -1,5 +1,5 @@
 {
-    "name": "smart-validator",
+    "name": "smart-validation",
     "version": "1.0.0",
     "description": "A lightweight and customizable validation library for JavaScript and TypeScript.",
     "license": "ISC",

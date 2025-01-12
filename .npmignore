@@ -1,0 +1,8 @@
+# Exclude development and configuration files
+node_modules/
+src/
+tests/
+.gitignore
+jest.config.js
+package-lock.json
+tsconfig.json

@@ -1,6 +1,6 @@
 {
     "name": "smart-validation",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A lightweight and customizable validation library for JavaScript and TypeScript.",
     "license": "ISC",
     "files": [

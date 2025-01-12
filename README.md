@@ -4,32 +4,6 @@ A robust and flexible validation library for JavaScript and TypeScript, providin
 
 ---
 
-## **Features**
-
--   **Type validation**: Supports `string`, `number`, `boolean`, `array`, `object`, `bigint`, and more.
--   **Rule-based validation**: Easily apply rules like `minLength`, `maxValue`, `allowedValues`, etc.
--   **Custom error messages**: Customize validation error messages for better UX.
--   **Custom validators**: Extend functionality by defining your own validation logic.
--   **Lightweight**: Minimal dependencies and optimized for performance.
-
----
-
-## **Installation**
-
-Install the package using NPM or Yarn:
-
-```bash
-npm install smart-validation
-```
-
-or
-
-```bash
-yarn add smart-validation
-```
-
----
-
 ## **Usage**
 
 ### Import the Library
@@ -55,40 +29,6 @@ if (result.isValid) {
 	console.log("Validation failed:", result.errors);
 }
 ```
-
-### Validating Numbers
-
-```typescript
-const rules = {
-	minValue: 10,
-	maxValue: 100,
-	allowedValues: [10, 20, 30, 40],
-};
-
-const result = isValid(25, ValidationType.NUMBER, rules);
-
-if (!result.isValid) {
-	console.error("Validation failed:", result.errors);
-}
-```
-
-### Validating Objects
-
-```typescript
-const rules = {
-	requiredFields: ["name", "age"],
-	customErrors: {
-		REQUIRED_FIELDS: "Missing required field.",
-	},
-};
-
-const result = isValid({ name: "John" }, ValidationType.OBJECT, rules);
-
-console.log(result.isValid ? "Valid object!" : result.errors);
-```
-
----
-
 ## **API Reference**
 
 ### **`isValid(value: any, type: ValidationType, rules: ValidationRules): ValidationResult`**
@@ -105,7 +45,6 @@ console.log(result.isValid ? "Valid object!" : result.errors);
     -   `isValid`: Boolean indicating if validation passed.
     -   `errors`: Array of error messages if validation failed.
 
----
 
 ### **Validation Rules**
 
@@ -121,59 +60,6 @@ console.log(result.isValid ? "Valid object!" : result.errors);
 | `prohibitedValues` | `any[]`         | Array of invalid values.                                        |
 | `requiredFields`   | `string[]`      | List of required fields for objects.                            |
 | `customValidator`  | `function`      | A custom validation function that returns `true` or `false`.    |
-| `customErrors`     | `object`        | Custom error messages for specific validation keys. (See below) |
-
----
-
-### **Custom Errors**
-
-Customize error messages by providing a `customErrors` object in the rules. The following keys are available:
-
-| Key                 | Default Error Message                              |
-| ------------------- | -------------------------------------------------- |
-| `ALLOW_EMPTY`       | `Empty values are not allowed.`                    |
-| `MIN_LENGTH`        | `Length must be at least {minLength}.`             |
-| `MAX_LENGTH`        | `Length must not exceed {maxLength}.`              |
-| `MIN_VALUE`         | `Value must be at least {minValue}.`               |
-| `MAX_VALUE`         | `Value must not exceed {maxValue}.`                |
-| `ALLOWED_VALUES`    | `Value is not in the allowed values.`              |
-| `PROHIBITED_VALUES` | `Value is in the prohibited values.`               |
-| `REQUIRED_FIELDS`   | `Field {field} is required.`                       |
-| `TYPE_MISMATCH`     | `Expected type {type}, but received {actualType}.` |
-| `REGEX_PATTERN`     | `String does not match the required pattern.`      |
-| `CUSTOM_VALIDATOR`  | `Custom validation failed.`                        |
-
----
-
-## **Contributing**
-
-We welcome contributions! Follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature/fix:
-    ```bash
-    git checkout -b feature/my-feature
-    ```
-3. Commit your changes:
-    ```bash
-    git commit -m "Add my new feature"
-    ```
-4. Push to the branch:
-    ```bash
-    git push origin feature/my-feature
-    ```
-5. Open a Pull Request.
-
----
-
-## **License**
-
-This project is licensed under the ISC License. See the `LICENSE` file for details.
-
----
-
-## **Support**
-
-If you encounter any issues, please [open an issue](https://github.com/siva-s-23/smart-validation/issues) on GitHub.
+| `customErrors`     | `object`        | Custom error messages for specific validation keys. |
 
 ---

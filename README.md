@@ -174,6 +174,6 @@ This project is licensed under the ISC License. See the `LICENSE` file for detai
 
 ## **Support**
 
-If you encounter any issues, please [open an issue](https://github.com/your-username/smart-validator/issues) on GitHub.
+If you encounter any issues, please [open an issue](https://github.com/siva-s-23/smart-validator/issues) on GitHub.
 
 ---
